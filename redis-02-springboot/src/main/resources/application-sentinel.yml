@@ -1,0 +1,18 @@
+#通过sentinel连接redis主节点，代码没区别，配置文文件不同而已
+spring:
+  redis:
+    database: 0
+    timeout: 3000
+    lettuce:
+      pool:
+        max-idle: 50
+        min-idle: 10
+        max-active: 100
+        max-wait: 100
+    sentinel: #哨兵
+      master: mymaster #主服务器所在集群名称
+      nodes:
+        - 192.168.0.2:26379
+        - 192.168.0.2:26380
+        - 192.168.0.2:26381
+

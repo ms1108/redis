@@ -1,7 +1,6 @@
 package com.mosn;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import com.mosn.pojo.User;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -33,4 +32,5 @@ class Redis02SpringbootApplicationTests {
 	//public void pipeline(){
 	//	redisTemplate.executePipelined()
 	//}
+
 }
